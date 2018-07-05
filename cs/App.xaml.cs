@@ -13,3 +13,4 @@ namespace DXSample {
     public partial class App : Application {
     }
 }
+ 
