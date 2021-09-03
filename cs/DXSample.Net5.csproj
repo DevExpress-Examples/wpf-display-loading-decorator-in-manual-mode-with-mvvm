@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DXSample</RootNamespace>
+    <AssemblyName>DXSample</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="View\CategoryView.xaml.cs" />
+    <Compile Remove="View\HomeView.xaml.cs" />
+    <Compile Remove="View\MainView.xaml.cs" />
+    <Compile Remove="View\SubCategory1View.xaml.cs" />
+    <Compile Remove="View\SubCategory2View.xaml.cs" />
+    <Compile Remove="View\SubCategory3View.xaml.cs" />
+    <Page Remove="View\CategoryView.xaml" />
+    <Page Remove="View\HomeView.xaml" />
+    <Page Remove="View\MainView.xaml" />
+    <Page Remove="View\SubCategory1View.xaml" />
+    <Page Remove="View\SubCategory2View.xaml" />
+    <Page Remove="View\SubCategory3View.xaml" />
+  </ItemGroup>
+</Project>
