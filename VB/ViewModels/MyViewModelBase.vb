@@ -1,21 +1,24 @@
-﻿Imports DevExpress.Mvvm
+Imports DevExpress.Mvvm
 Imports DevExpress.Mvvm.DataAnnotations
 
 Namespace DXSample.ViewModels
+
     Public Class MyViewModelBase
         Inherits ViewModelBase
 
-        Public Property Caption() As String
+        Public Property Caption As String
             Get
-                Return GetProperty(Function() Caption)
+                Return GetProperty(Function() Me.Caption)
             End Get
+
             Set(ByVal value As String)
                 SetProperty(Function() Caption, value)
             End Set
         End Property
-        <Command> _
+
+        <Command>
         Public Sub ChangeText()
-            TryCast(DirectCast(Me, ISupportParentViewModel).ParentViewModel, MainViewModel).SplashScreenViewModel.Caption = Me.Caption
+            TryCast(CType(Me, ISupportParentViewModel).ParentViewModel, MainViewModel).SplashScreenViewModel.Caption = Caption
         End Sub
     End Class
 End Namespace
