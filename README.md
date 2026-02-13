@@ -23,7 +23,7 @@ This example demonstrates how to add the [Loading Decorator](https://docs.devexp
 ## More Examples
 * [Show a cancelable wait indicator (Splash Screen) and update its content during a complex background operation](https://github.com/DevExpress-Examples/How-to-show-a-cancelable-Splash-Screen-and-update-its-content-during-a-complex-background-operation)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-display-loading-decorator-in-manual-mode-with-mvvm&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-display-loading-decorator-in-manual-mode-with-mvvm&~~~was_helpful=no)
 
